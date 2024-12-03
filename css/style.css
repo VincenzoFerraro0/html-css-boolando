@@ -57,3 +57,19 @@ section div {
     width: 300px;
     height: 350px;
 }
+
+/* start footer */
+footer {
+    background-color: #1A1A1A;
+    height: 100px;
+}
+
+footer .flex {
+    justify-content: space-between;
+    /* margin-block: 20px; */
+}
+
+footer .container-80 > div {
+    margin-block: 20px;
+
+}
