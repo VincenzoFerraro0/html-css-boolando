@@ -1,41 +1,38 @@
+html {
+    font-family: sans-serif;
+    line-height: 160%;
+}
 header {
-    height: 70px;
-    background-color: orange;
-
+    background-color: #FF6900;
 }
 
 .flex {
     display: flex;
 }
 
-header .flex {
+nav.flex {
+    padding-block: 15px ;
     justify-content: space-between;
-}
+    align-items: center;
 
-nav {
-
-    padding-block: 10px;
-}
-
-.logo {
-    order: 2;
-}
-.menu {
-    order: 1;
-}
-
-.menu__icon {
-    order: 3;
 }
 
 
-nav figure,
-nav div
- {
-    background-color: rgba(222, 220, 220, 0.757);
-    width: 50px;
-    height: 50px;
+ul.menu,
+ul.menu__icon {
+    gap: 10px;
 }
+
+/* colore lista menu  */
+.menu li a {
+    color: white;
+}
+/* svg grandezza e colore  */
+.menu__icon svg {
+     width: 15px;
+     fill: white;
+}
+
 
 /* start main */
 .container-80 {
@@ -47,7 +44,7 @@ main .flex {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px 20px;
-    margin-top: 50px;
+    margin-block: 50px;
 
 
 }
