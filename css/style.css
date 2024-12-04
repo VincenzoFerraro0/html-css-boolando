@@ -15,6 +15,7 @@ html {
 
 header {
     background-color: #FF6900;
+
 }
 
 
@@ -48,17 +49,21 @@ ul.menu__icon {
 section.flex {
     justify-content: space-between;
     margin-block:50px;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
-.item {
-    width: 300px;
-    height: 433px;
-    position: relative;
+.cards {
+    flex-basis: calc(100% / 3 - 10px);
 
+
+}
+.card {
+    position: relative;
 }
 
 /* animazione immagine */
-.card:hover .img-1 {
+.cards:hover .img-1 {
     display: none;
 }
 
@@ -66,7 +71,7 @@ section.flex {
     display: none;
 } 
 
-.card:hover .img-2 {
+.cards:hover .img-2 {
     display: inline-block;
 }
 
