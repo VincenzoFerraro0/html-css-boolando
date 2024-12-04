@@ -1,14 +1,23 @@
 html {
     font-family: sans-serif;
-    line-height: 160%;
+    /* line-height: 160%; */
 }
-header {
-    background-color: #FF6900;
+
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .flex {
     display: flex;
 }
+
+
+header {
+    background-color: #FF6900;
+}
+
+
 
 nav.flex {
     padding-block: 15px ;
@@ -35,26 +44,64 @@ ul.menu__icon {
 
 
 /* start main */
-.container-80 {
-    width: 80%;
-    margin: 0 auto;
-}
 
-main .flex {
+section.flex {
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    margin-block: 50px;
-
+    margin-block:50px;
 
 }
-
-section div {
-    background-color: aqua;
+.item {
     width: 300px;
-    height: 350px;
+    height: 433px;
+    position: relative;
+
 }
 
+
+.discount{
+    background-color: red;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+}
+
+.target {
+    background-color: green;
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+
+
+}
+.card__icon svg{
+    fill: black;
+    width: 24px;
+}
+
+.card__icon{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.card__icon svg:hover{
+    fill:red;
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+/*  */
 /* start footer */
 footer {
     background-color: #1A1A1A;
