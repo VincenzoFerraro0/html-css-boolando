@@ -15,15 +15,19 @@ html {
 
 header {
     background-color: #FF6900;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 
 }
 
 
 
 nav.flex {
-    padding-block: 15px ;
     justify-content: space-between;
     align-items: center;
+    padding-block: 15px ;
 
 }
 
